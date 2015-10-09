@@ -1,0 +1,50 @@
+{
+	"name": "angular-cache-service",
+	"version": "0.0.1",
+	"private": true,
+	"color": true,
+	"author": {
+		"name": "Damilola Okuboyejo",
+		"email": "dokuboyejo@gmail.com"
+	},
+	"keywords": ["angular",
+	"angularjs",
+	"angular cache",
+	"cache",
+	"cookie",
+	"indexeddb",
+	"service",
+	"storage",
+	"websql"],
+	"description": "The service provides ability to cache client data",
+	"dependencies": {
+		"bower": "~1.3.8",
+		"gulp": "^3.8.11",
+		"gulp-plumber": "^1.0.0",
+		"gulp-uglify": "~1.2.0",
+		"gulp-if": "^1.2.5",
+		"gulp-rename": "~1.2.2",
+		"gulp-concat": "^2.6.0",
+		"gulp-watch": "~4.3.5"
+	},
+	"devDependencies": {
+		"karma": "~0.12.0",
+		"mocha": "~2.2.1",
+		"growl": "~1.8.1",
+		"karma-mocha": "~0.1.10",
+		"karma-sinon-chai": "~0.3.0",
+		"karma-chrome-launcher": "~0.1",
+		"karma-firefox-launcher": "~0.1",
+		"karma-opera-launcher": "~0.1",
+		"karma-safari-launcher": "~0.1",
+		"karma-ie-launcher": "~0.1",
+		"karma-phantomjs-launcher": "~0.1",
+		"karma-coverage": "~0.1",
+		"karma-mocha-reporter": "~1.0.2",
+		"karma-htmlfile-reporter": "~0.1"
+	},
+	"scripts": {
+		"test": "mocha",
+		"coverage": "karma-coverage _mocha"
+	},
+	}

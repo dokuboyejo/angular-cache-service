@@ -1,0 +1,10 @@
+/bower_components/
+/node_modules/
+/coverage/
+/result/
+/build/
+/npm-debug.log
+/.project
+/.tern*
+/.settings/
+/.tmp/
