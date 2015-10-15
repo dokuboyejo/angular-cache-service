@@ -60,35 +60,37 @@ angular.module('myApp', ['angular-cache-service'])
 ```
 
 ### API
+```
 // supported cache mechanism
-```cacheType```
+cacheType
 
 // storage handle
-```getStorage()```
+getStorage()
 
 // storage availability
-```storeQuotaExceeded```
+storeQuotaExceeded
 
 // check storage availability and usability
-```storageExist```
+storageExist
 
 // configurable options
-```options```
+options
 
 // cache service initialization
-```init(initData)```
+init(initData)
 
 // persist cached data
-```save(key, value```
+save(key, value
 
 // remove cached data
-```remove(key)```
+remove(key)
 
 // retrieve cached data
-```get(key)```
+get(key)
 
 // compute size of cached storage
-```length()```
+length()
 
 // clear cache storage
-```clear()```
+clear()
+```
