@@ -1,7 +1,6 @@
 {
 	"name": "angular-cache-service",
 	"version": "0.0.2",
-	"private": true,
 	"color": true,
 	"author": {
 		"name": "Damilola Okuboyejo",
