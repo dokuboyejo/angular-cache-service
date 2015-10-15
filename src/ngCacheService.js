@@ -1252,7 +1252,7 @@ angular.module("a2o4.storage", [])
                        deferred.resolve(db);
                     });
                     store = localIndexedDB;
-                    console.debug("cacheType overriden as indexedDB");
+                    console.info("cacheType overriden as indexedDB");
                     console.log(localIndexedDB.dbName + " indexedDB database opened");
                  };
                  // preprocessor handler for localWebSQL
@@ -1261,7 +1261,7 @@ angular.module("a2o4.storage", [])
                        deferred.resolve(db);
                     });
                     store = localWebSQL;
-                    console.debug("cacheType overriden as webSQL");
+                    console.info("cacheType overriden as webSQL");
                     console.log(localWebSQL.dbName + " webSQL database opened");
                  };
                  // preprocessor handler for localStorageDB
@@ -1270,7 +1270,7 @@ angular.module("a2o4.storage", [])
                        deferred.resolve(db);
                     });
                     store = localStorageDB;
-                    console.debug("cacheType overriden as localStorage");
+                    console.info("cacheType overriden as localStorage");
                     console.log(localStorageDB.dbName + " localStorage database opened");
                  };
                  // preprocessor handler for localSessionStorage
@@ -1279,7 +1279,7 @@ angular.module("a2o4.storage", [])
                        deferred.resolve(db);
                     });
                     store = localSessionStorage;
-                    console.debug("cacheType overriden as sessionStorage");
+                    console.info("cacheType overriden as sessionStorage");
                     console.log(localSessionStorage.dbName + " sessionStorage database opened");
                  };
                  // preprocessor handler for POLY_FILL
@@ -1289,7 +1289,7 @@ angular.module("a2o4.storage", [])
                     });
                     store = POLY_FILL;
                     angular.toJson('store: ' + store);
-                    console.debug("cacheType overriden as POLY_FILL");
+                    console.info("cacheType overriden as POLY_FILL");
                     console.log(POLY_FILL.dbName + " POLY_FILL database opened");
                  };
                  
