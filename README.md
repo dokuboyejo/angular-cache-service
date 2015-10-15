@@ -13,7 +13,7 @@ __Supported Browsers:__
 
 ### Installation and Usage
 __Install from repo__
-`npm install --save angular-cache-service`
+`npm install angular-cache-service --save-dev`
 
 __Add as dependency and use__
 ```js
