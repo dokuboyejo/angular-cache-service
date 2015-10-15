@@ -18,7 +18,7 @@ __Install from repo__
 __Add as dependency and use__
 ```js
 angular.module('myApp', ['angular-cache-service'])
-  .controller('myCtrl', function (cacheService) {
+  .controller('myCtrl', [ 'cacheService' ], function (cacheService) {
     // create cache
     cacheServiceInstance = cacheService.create(); // use cacheService.getNewInstance() for prototype cache
     
