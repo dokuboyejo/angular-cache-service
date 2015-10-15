@@ -73,9 +73,6 @@ storeQuotaExceeded
 // check storage availability and usability
 storageExist
 
-// configurable options
-options
-
 // cache service initialization
 init(initData)
 
