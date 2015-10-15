@@ -109,4 +109,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mocha');
 
   grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'karma']);
+  grunt.registerTask('test', ['jshint', 'karma']);
 };
