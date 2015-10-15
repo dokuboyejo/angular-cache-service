@@ -2,7 +2,6 @@
 	"name": "angular-cache-service",
 	"version": "0.0.5",
 	"color": true,
-	"homepage": "http://jmdobry.github.io/angular-cache/",
 	"author": {
 		"name": "Damilola Okuboyejo",
 		"email": "dokuboyejo@gmail.com"
