@@ -2,6 +2,7 @@
 	"name": "angular-cache-service",
 	"version": "0.0.3",
 	"color": true,
+	"homepage": "http://jmdobry.github.io/angular-cache/",
 	"author": {
 		"name": "Damilola Okuboyejo",
 		"email": "dokuboyejo@gmail.com"
@@ -10,6 +11,12 @@
 		"type": "git",
 		"url": "https://github.com/dokuboyejo/angular-cache-service.git"
 	},
+	"licenses": [
+	    {
+	      "type": "GPL",
+	      "url": "https://github.com/dokuboyejo/angular-cache-service/blob/master/license"
+	    }
+	  ],
 	"keywords": [
 		"angular",
 		"angularjs",
