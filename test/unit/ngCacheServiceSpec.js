@@ -14,15 +14,15 @@ describe("angular-cache-service", function() {
          $timeout = _$timeout_;
 
          cacheServiceInstance.init({
-            // name of cacheDB. this is applicable to INDEXED_DB | WEB_SQL
+            // name of cacheDB.
             dbName : "bookAnalysisDB1",
-            // name of cacheTable. this is applicable to INDEXED_DB | WEB_SQL
+            // name of cacheTable.
             entityName : "bookEntity1",
             // cache current page for next 30min
             maxAge : 60000,
             // INDEXED_DB | WEB_SQL | LOCAL_STORAGE | SESSION_STORAGE | POLY_FILL
             cacheType : cacheServiceInstance.cacheType.POLY_FILL,
-            // delete the first 5 cached items when storage full . this is applicable to LOCAL_STORAGE | SESSION_STORAGE
+            // delete the first 5 cached items when storage full.
             deletableCacheItems : 5
          });
          // flush all timeout for 'init' call stack
@@ -99,8 +99,7 @@ describe("angular-cache-service", function() {
             
             cacheServiceInstance.length().then(function(size) {
                console.log("size: " + size);
-               assert.equal(size, 1);
-               expect(size).to.equal(3);
+               expect(size).to.equal(2);
             });
             // flush all timeout for 'length' call stack
             $timeout.flush();
