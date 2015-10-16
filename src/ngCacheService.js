@@ -1,6 +1,6 @@
 /**
- * version: 0.0.1
- * 10-09-2015 
+ * version: 0.0.7
+ * 10-16-2015 
  * The cache service handles client-side caching (almost about any object can
  * be cached on the client). The cache mechanism implemented by this service
  * uses either { indexedDB | webSQL | localStorage | sessionStorage | polyFill }
