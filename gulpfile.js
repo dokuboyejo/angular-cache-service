@@ -26,20 +26,20 @@ gulp.task('version-bump', function() {
 gulp.task('test', function(done) {
    new karmaServer({
       configFile : __dirname + karmaConfig,
-      singleRun : false
+      singleRun : true
    }, function() {
       done();
    }).start();
 });
 
 gulp.task('lint', function() {
-   return gulp.src('src/*Service.js').pipe(jshint()).pipe(jshint.reporter('fail', {
-      verbose : true
-   }));
+   return gulp.src('src/ngCacheService.js').pipe(jshint('.jshintrc')).pipe(jshint.reporter('jshint-stylish')).pipe(jshint.reporter('fail'));
 });
 
 gulp.task('release', [ 'version-bump', 'test' ], function() {
-   gulp.src('src/*.js').pipe(sourcemaps.init({loadMaps: true})).pipe(uglify({
+   gulp.src('src/*.js').pipe(sourcemaps.init({
+      loadMaps : true
+   })).pipe(uglify({
       mangle : false
    })).on('error', gutil.log.bind(gutil, 'JS minify Error')).pipe(rename('angular-cache-service.min.js')).pipe(sourcemaps.write('./')).pipe(gulp.dest('./dist'));
 });

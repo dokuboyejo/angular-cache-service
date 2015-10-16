@@ -4,8 +4,7 @@ module.exports = function(config) {
 
       basePath : '../../',
 
-      files : [ 'test/resources/lib/angularjs/angular.min.js', 'test/resources/lib/angularjs/angular-route.min.js', 'test/resources/lib/angularjs/angular-resource.min.js', 'test/resources/lib/angularjs/angular-mocks.js', 'test/resources/lib/jquery/jquery.js',
-      'src/*Service.js', 'test/**/*Spec.js' ],
+      files : [ 'test/resources/lib/angularjs/angular.min.js', 'test/resources/lib/angularjs/angular-route.min.js', 'test/resources/lib/angularjs/angular-resource.min.js', 'test/resources/lib/angularjs/angular-mocks.js', 'test/resources/lib/jquery/jquery.js', 'src/*Service.js', 'test/**/*Spec.js' ],
 
       autoWatch : true,
 
@@ -15,7 +14,7 @@ module.exports = function(config) {
       // be tested (only installed browsers + launchers will be
       // tested) -- PhantomJS is required for running tests on Jenkins
       // browsers : ['PhantomJS', 'Chrome', 'IE8', 'IE9', 'IE', 'Safari', 'Firefox'],
-      browsers : [ /*'PhantomJS' , */'Chrome'/*, 'IE8', 'IE9', 'IE', 'Safari', 'Firefox' */],
+      browsers : [ 'PhantomJS', 'Chrome', 'Safari', 'Firefox', 'Opera', 'IE8', 'IE9', 'IE10', 'IE' ],
 
       plugins : [ 'karma-chrome-launcher', 'karma-firefox-launcher', 'karma-opera-launcher', 'karma-safari-launcher', 'karma-ie-launcher', 'karma-phantomjs-launcher', 'karma-mocha', 'karma-sinon-chai', 'karma-coverage', 'karma-mocha-reporter', 'karma-junit-reporter', 'karma-htmlfile-reporter' ],
 
@@ -31,20 +30,16 @@ module.exports = function(config) {
          IE8 : {
             base : 'IE',
             'x-ua-compatible' : 'IE=EmulateIE8'
-         },
-         IE7 : {
-            base : 'IE',
-            'x-ua-compatible' : 'IE=EmulateIE7'
          }
       },
 
-      reporters : [ 'mocha', 'coverage', 'junit' ],
+      reporters : [ 'mocha', 'coverage', 'html', 'junit' ],
 
       preprocessors : {
          // source files, that you wanna generate coverage for
          // do not include tests or libraries
          // (these files will be instrumented by Istanbul)
-         // 'src/**/*Service.js' : [ 'coverage' ]
+         'src/*.js' : [ 'coverage' ]
       },
 
       mochaReporter : {
@@ -62,7 +57,16 @@ module.exports = function(config) {
          suite : 'unit'
       },
 
+      htmlReporter : {
+         outputFile : 'test/coverage/jUnit-TestResults.html'
+      },
+
       coverageReporter : {
+         instrumenterOptions : {
+            istanbul : {
+               noCompact : true
+            }
+         },
          reporters : [ {
             type : 'html',
             dir : 'test/coverage/html-coverage/'
