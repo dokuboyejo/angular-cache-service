@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="719"  lines-covered="200"  line-rate="0.2782"  branches-valid="184"  branches-covered="31"  branch-rate="0.1685"  timestamp="1444979159903" complexity="0" version="0.1">
+<coverage lines-valid="719"  lines-covered="200"  line-rate="0.2782"  branches-valid="184"  branches-covered="31"  branch-rate="0.1685"  timestamp="1444979487713" complexity="0" version="0.1">
 <sources>
 	<source>c:\Workspaces\financialadviser-local\angular-cache-service</source>
 </sources>
