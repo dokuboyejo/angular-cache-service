@@ -34,7 +34,7 @@ angular.module("a2o4.storage", [])
            // poly fill options
            POLY_FILL.options = {};
            // poly fill storage space
-           POLY_FILL.storage = {};
+           POLY_FILL.db = {};
            
             // return reference to poly fill
            POLY_FILL.open = function() {
@@ -58,7 +58,7 @@ angular.module("a2o4.storage", [])
                  savedStatus = false;
               
               if (key) {
-                 POLY_FILL.storage[key] = value;
+                 POLY_FILL.db[key] = value;
                  savedStatus = true;
                  
                  // invalidate current cached page after specified max period
@@ -82,7 +82,7 @@ angular.module("a2o4.storage", [])
             */
            POLY_FILL.get = POLY_FILL.getItem = function(key) {
               var deferred = $q.defer();
-              var data = POLY_FILL.storage[key];
+              var data = POLY_FILL.db[key];
               
               if (data) {
                  $timeout(function() {
@@ -103,9 +103,9 @@ angular.module("a2o4.storage", [])
             */
            POLY_FILL.remove = POLY_FILL.removeItem = function(key) {
               var deferred = $q.defer();
-              if (POLY_FILL.storage.hasOwnProperty(key)) {
-                 // delete POLY_FILL.storage[key];
-                 POLY_FILL.storage[key] = null;
+              if (POLY_FILL.db.hasOwnProperty(key)) {
+                 // delete POLY_FILL.db[key];
+                 POLY_FILL.db[key] = null;
                  $timeout(function() {
                     deferred.resolve();
                  });
@@ -123,9 +123,9 @@ angular.module("a2o4.storage", [])
                  size = 0,
                  key;
               
-                for (key in POLY_FILL.storage) {
+                for (key in POLY_FILL.db) {
                    // exclude function properties from size counting
-                   if (POLY_FILL.storage.hasOwnProperty(key)) {
+                   if (POLY_FILL.db.hasOwnProperty(key)) {
                        size++;
                    } 
                 }
@@ -144,10 +144,10 @@ angular.module("a2o4.storage", [])
                  key;
               
               try {
-                 for (key in POLY_FILL.storage) {
+                 for (key in POLY_FILL.db) {
                     // exclude function properties as keys for data removal
-                    if (POLY_FILL.storage.hasOwnProperty(key)) {
-                        delete POLY_FILL.storage[key];
+                    if (POLY_FILL.db.hasOwnProperty(key)) {
+                        delete POLY_FILL.db[key];
                     }
                  }
                  
@@ -1383,7 +1383,7 @@ angular.module("a2o4.storage", [])
                                 // update storage options
                                 localStorageDB.options = options;
                                 localStorageDB.open().then(function(lsdb) {
-                                   if (lsdb  && localStorageDB.db.save) {
+                                   if (lsdb) {
                                       localStoragePreprocessor(lsdb);
                                    } else {
                                       // update storage options
@@ -1423,7 +1423,7 @@ angular.module("a2o4.storage", [])
                                 // update storage options
                                 localSessionStorage.options = options;
                                 localSessionStorage.open().then(function(lssdb) {
-                                   if (lssdb  && localSessionStorage.db.save) {
+                                   if (lssdb) {
                                       sessionStoragePreprocessor(lssdb);
                                    } else {
                                       // update storage options

@@ -15,7 +15,7 @@ module.exports = function(config) {
       // be tested (only installed browsers + launchers will be
       // tested) -- PhantomJS is required for running tests on Jenkins
       // browsers : ['PhantomJS', 'Chrome', 'IE8', 'IE9', 'IE', 'Safari', 'Firefox'],
-      browsers : [ 'PhantomJS' /*, 'Chrome', 'IE8', 'IE9', 'IE', 'Safari', 'Firefox' */],
+      browsers : [ /*'PhantomJS' , */'Chrome'/*, 'IE8', 'IE9', 'IE', 'Safari', 'Firefox' */],
 
       plugins : [ 'karma-chrome-launcher', 'karma-firefox-launcher', 'karma-opera-launcher', 'karma-safari-launcher', 'karma-ie-launcher', 'karma-phantomjs-launcher', 'karma-mocha', 'karma-sinon-chai', 'karma-coverage', 'karma-mocha-reporter', 'karma-junit-reporter', 'karma-htmlfile-reporter' ],
 

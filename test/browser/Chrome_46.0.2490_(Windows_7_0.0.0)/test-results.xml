@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 46.0.2490 (Windows 7 0.0.0)" package="unit" timestamp="2015-10-16T06:06:53" id="0" hostname="NB-ODAMILOLAPC" tests="7" errors="0" failures="0" time="0.008">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36"/>
+  </properties>
+  <testcase name="checks that service was created using singleton pattern" time="0.005" classname="Chrome_46_0_2490_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="checks that service was created using prototype" time="0" classname="Chrome_46_0_2490_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates ability to cache data" time="0.001" classname="Chrome_46_0_2490_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates current cache size" time="0.001" classname="Chrome_46_0_2490_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates ability to retrieve data from cache" time="0" classname="Chrome_46_0_2490_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates ability to delete a cached data" time="0" classname="Chrome_46_0_2490_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates ability to delete a cached data" time="0.001" classname="Chrome_46_0_2490_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <system-out>
+    <![CDATA[Chrome 46.0.2490 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
+,Chrome 46.0.2490 (Windows 7 0.0.0) INFO: 'cacheType overriden as localStorage'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'bookAnalysisDB2 localStorage database opened'
+,Chrome 46.0.2490 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
+,Chrome 46.0.2490 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'savedStatus: true'
+,Chrome 46.0.2490 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'savedStatus:x true'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'savedStatus:y true'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'size: 2'
+,Chrome 46.0.2490 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'result: null'
+,Chrome 46.0.2490 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'removed: 1444975615477R'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'result: null'
+,Chrome 46.0.2490 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'savedStatus:x true'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'savedStatus:y true'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'POLY_FILL bookAnalysisDB1 data cleared'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'clearing bookAnalysisDB1 .....'
+,Chrome 46.0.2490 (Windows 7 0.0.0) LOG: 'size: 0'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

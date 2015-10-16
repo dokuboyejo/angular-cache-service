@@ -40,7 +40,7 @@ describe("angular-cache-service", function() {
                // cache current page for next 30min
                maxAge : 60000,
                // INDEXED_DB | WEB_SQL | LOCAL_STORAGE | SESSION_STORAGE | POLY_FILL
-               cacheType : cacheServiceInstance2.cacheType.POLY_FILL,
+               cacheType : cacheServiceInstance2.cacheType.LOCAL_STORAGE,
                // delete the first 5 cached items when storage full . this is applicable to LOCAL_STORAGE | SESSION_STORAGE
                deletableCacheItems : 5
             });

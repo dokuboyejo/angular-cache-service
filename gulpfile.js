@@ -26,7 +26,7 @@ gulp.task('version-bump', function() {
 gulp.task('test', function(done) {
    new karmaServer({
       configFile : __dirname + karmaConfig,
-      singleRun : true
+      singleRun : false
    }, function() {
       done();
    }).start();
