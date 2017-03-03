@@ -4,7 +4,7 @@ module.exports = function(config) {
 
       basePath : '../../',
 
-      files : [ 'test/resources/lib/angularjs/angular.min.js', 'test/resources/lib/angularjs/angular-route.min.js', 'test/resources/lib/angularjs/angular-resource.min.js', 'test/resources/lib/angularjs/angular-mocks.js', 'test/resources/lib/jquery/jquery.js', 'src/*Service.js', 'test/**/*Spec.js' ],
+      files : [ 'test/resources/lib/angularjs/angular.min.js', 'test/resources/lib/angularjs/angular-route.min.js', 'test/resources/lib/angularjs/angular-resource.min.js', 'test/resources/lib/angularjs/angular-mocks.js', 'test/resources/lib/jquery/jquery.js', 'src/*.js', 'test/**/*Spec.js' ],
 
       autoWatch : true,
 

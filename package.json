@@ -1,11 +1,12 @@
 {
 	"name": "angular-cache-service",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"color": true,
 	"author": {
 		"name": "Damilola Okuboyejo",
 		"email": "dokuboyejo@gmail.com"
 	},
+	"main": "dist/angular-cache-service.min.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/dokuboyejo/angular-cache-service.git"

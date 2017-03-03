@@ -33,7 +33,7 @@ gulp.task('test', function(done) {
 });
 
 gulp.task('lint', function() {
-   return gulp.src('src/ngCacheService.js').pipe(jshint('.jshintrc')).pipe(jshint.reporter('jshint-stylish')).pipe(jshint.reporter('fail'));
+   return gulp.src('src/*.js').pipe(jshint('.jshintrc')).pipe(jshint.reporter('jshint-stylish')).pipe(jshint.reporter('fail'));
 });
 
 gulp.task('release', [ 'version-bump', 'test' ], function() {

@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<testsuite name="Opera 29.0.1795 (Windows 7 0.0.0)" package="unit" timestamp="2017-03-03T08:59:29" id="0" hostname="NB-ODAMILOLAPC" tests="7" errors="0" failures="0" time="0.006">
+<testsuite name="Chrome 56.0.2924 (Windows 7 0.0.0)" package="unit" timestamp="2017-03-03T08:59:28" id="0" hostname="NB-ODAMILOLAPC" tests="7" errors="0" failures="0" time="0.01">
   <properties>
-    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36 OPR/29.0.1795.47"/>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"/>
   </properties>
-  <testcase name="checks that service was created using singleton pattern" time="0.005" classname="Opera_29_0_1795_(Windows_7_0_0_0).unit.angular-cache-service"/>
-  <testcase name="checks that service was created using prototype" time="0" classname="Opera_29_0_1795_(Windows_7_0_0_0).unit.angular-cache-service"/>
-  <testcase name="validates ability to cache data" time="0.001" classname="Opera_29_0_1795_(Windows_7_0_0_0).unit.angular-cache-service"/>
-  <testcase name="validates current cache size" time="0" classname="Opera_29_0_1795_(Windows_7_0_0_0).unit.angular-cache-service"/>
-  <testcase name="validates ability to retrieve data from cache" time="0" classname="Opera_29_0_1795_(Windows_7_0_0_0).unit.angular-cache-service"/>
-  <testcase name="validates ability to delete a cached data" time="0" classname="Opera_29_0_1795_(Windows_7_0_0_0).unit.angular-cache-service"/>
-  <testcase name="validates ability to delete a cached data" time="0" classname="Opera_29_0_1795_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="checks that service was created using singleton pattern" time="0.007" classname="Chrome_56_0_2924_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="checks that service was created using prototype" time="0" classname="Chrome_56_0_2924_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates ability to cache data" time="0.001" classname="Chrome_56_0_2924_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates current cache size" time="0" classname="Chrome_56_0_2924_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates ability to retrieve data from cache" time="0.001" classname="Chrome_56_0_2924_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates ability to delete a cached data" time="0" classname="Chrome_56_0_2924_(Windows_7_0_0_0).unit.angular-cache-service"/>
+  <testcase name="validates ability to delete a cached data" time="0.001" classname="Chrome_56_0_2924_(Windows_7_0_0_0).unit.angular-cache-service"/>
   <system-out>
     <![CDATA[PhantomJS 1.9.8 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
 ,PhantomJS 1.9.8 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
@@ -67,43 +67,6 @@
 ,Chrome 56.0.2924 (Windows 7 0.0.0) LOG: 'POLY_FILL bookAnalysisDB1 data cleared'
 ,Chrome 56.0.2924 (Windows 7 0.0.0) LOG: 'clearing bookAnalysisDB1 .....'
 ,Chrome 56.0.2924 (Windows 7 0.0.0) LOG: 'size: 0'
-,IE 8.0.0 (Windows 7 0.0.0) ERROR
-  Expected identifier
-  at C:/Workspaces/financialadviser-local/angular-cache-service/node_modules/karma-sinon-chai/node_modules/chai/chai.js:3012
-,Opera 29.0.1795 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
-,Opera 29.0.1795 (Windows 7 0.0.0) INFO: 'cacheType overriden as localStorage'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'bookAnalysisDB2 localStorage database opened'
-,Opera 29.0.1795 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
-,Opera 29.0.1795 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'savedStatus: true'
-,Opera 29.0.1795 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'savedStatus:x true'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'savedStatus:y true'
-,IE 8.0.0 (Windows 7 0.0.0) ERROR
-  Object expected
-  at C:/Workspaces/financialadviser-local/angular-cache-service/test/resources/lib/angularjs/angular.min.js:7
-,IE 8.0.0 (Windows 7 0.0.0) ERROR
-  Object doesn't support property or method 'module'
-  at C:/Workspaces/financialadviser-local/angular-cache-service/test/resources/lib/angularjs/angular-route.min.js:7
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'size: 2'
-,Opera 29.0.1795 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'result: null'
-,Opera 29.0.1795 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'removed: 1488531569457R'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'result: null'
-,Opera 29.0.1795 (Windows 7 0.0.0) INFO: 'cacheType overriden as POLY_FILL'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'bookAnalysisDB1 POLY_FILL database opened'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'savedStatus:x true'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'savedStatus:y true'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'POLY_FILL bookAnalysisDB1 data cleared'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'clearing bookAnalysisDB1 .....'
-,Opera 29.0.1795 (Windows 7 0.0.0) LOG: 'size: 0'
 
 ]]>
   </system-out>

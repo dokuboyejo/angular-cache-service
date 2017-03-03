@@ -1209,6 +1209,16 @@ angular.module("a2o4.storage", [])
         };
 
         return {
+           // POLY_FILL object
+           POLY_FILL: POLY_FILL,
+           // localStorage implementation
+           localStorageDB: localStorageDB,
+           // sessionStorage implementation
+           localSessionStorage: localSessionStorage,
+           // IndexedDB implementation
+           localIndexedDB: localIndexedDB,
+           // webSQL implementation
+           localWebSQL: localWebSQL,
            // supported cache mechanism
            cacheType: cacheType,
            // storage handle
